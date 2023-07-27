@@ -79,7 +79,6 @@ function getPokemonList(page) {
         });
 }
 
-
 // mostrar las tarjetas de Pokémon en la lista
 function displayPokemonCard(pokemon) {
     const card = document.createElement('div');
