@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -66,6 +67,9 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el input y los botones */
   
 }
 
@@ -267,7 +271,11 @@ header {
 
 ul{
   font-family: 'Architects Daughter', cursive;
+}
 
+h3{
+  font-family: 'Lumanosimo', cursive;
+  text-align: center;
 }
 
 .modal-header {
@@ -297,11 +305,11 @@ ul{
 }
 
 .modal-footer {
-  background-color: #333; /* Color de fondo para el pie de página */
+  background-color: #333; 
   color: #fff;
   border-top: none;
-  padding: 1rem 2rem; /* Espaciado interno en el pie de página */
-  text-align: center; /* Centrar el contenido en el pie de página */
+  padding: 1rem 2rem;
+  text-align: center;
   font-family: 'Share Tech Mono', monospace;
 }
 
@@ -323,5 +331,58 @@ ul{
   }
 }
 
+
+/* Estilo para el botón "Anterior" */
+#btnPrevious {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 17px;
+  border: 2px solid #f05030; 
+  border-radius: 8px;
+  background-color: transparent;
+  color: #000000; 
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#btnPrevious:hover {
+  background-color: #f05030; 
+  color: #fff;
+  font-weight: bold;
+
+}
+
+#btnPrevious:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Estilo para el botón "Siguiente" */
+#btnNext {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 17px;
+  border: 2px solid #f05030; /* Rojo Pokémon */
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #000000; /* Rojo Pokémon */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#btnNext:hover {
+  background-color: #f05030; /* Rojo Pokémon */
+  color: #fff;
+  font-weight: bold;
+}
+
+#btnNext:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 
