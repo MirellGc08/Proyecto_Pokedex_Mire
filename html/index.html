@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API</title>
+    <link rel="shortcut icon" href="/imgs/icons8-pokeball-48.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/js/main.js"></script>
+<body>
+    <header class="container">
+            <img src="/imgs/pokeapi_256.3fa72200.png" class="LogoPokedex">
+        </a>
+        <div class="header-content">
+            <section class="header-text">
+   ¡Descubre datos interesantes sobre tu Pokemón favorito!
+         
+        </section>
+    </div>
+        <div class="container-input">
+            <div class="search-container">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-search">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <input type="text" id="inputSearch" placeholder="Buscar por nombre de Pokemon">
+                <button id="searchButton">Buscar</button>
+            </div>
+    </header>
+    <section class="InicioPokemon">
+    <div class="row" id="pokemonList"></div>
+    </div>
+</section>
+<!-- botones de paginación -->
+<div class="pagination">
+    <button id="btnPrevious" class="btn btn-primary" onclick="goToPreviousPage()" disabled>Anterior</button>
+    <button id="btnNext" class="btn btn-primary" onclick="goToNextPage()" disabled>Siguiente</button>
+</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h2 class="modal-title text-center" id="modalTitle"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="modalCloseButton"
+                        data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

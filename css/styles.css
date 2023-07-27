@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background-image: url(/imgs/fondo-pokeapi.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0; 
+}
+
+.header-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: #000000;
+  margin-right: 20px; /* Margen derecho para separar el contenido del logo */
+  text-align: center;
+  margin-left: 20px;
+  background-size: 300%;
+  font-weight: bold;
+  
+  
+}
+
+.logo img {
+  width: 150px;
+
+}
+
+
+/* BUSCAR */
+.container-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  border: 1px solid #555;
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+
+#inputSearch {
+  font-family: inherit;
+  width: 300px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  flex: 1;
+  padding: 10px;
+ background-color: transparent;
+ font-style: italic;
+ 
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+  stroke: #555;
+}
+
+#searchButton {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  font-family: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: var(--color-primary);
+  color: #000000;
+  border: 2px solid #a1a2a2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: var(--color-primary-hover);
+  color: #000;
+  transform: scale(1.1);
+  animation: both;
+}
+
+/* Boton saber mas */
+.btn.btn-primary.btn-block {
+  background-color: var(--clr-gray);
+  padding: 0.5rem;
+  border-radius: 100vmax;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.btn.btn-primary.btn-block:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  text-transform: capitalize;
+}
+
+/* Tipo */
+/* Tipo letra */
+.card-text {
+  font-family: 'Pacifico', cursive;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  border-radius: 100vmax;
+  color: #000000;
+  /*font-weight: bold;*/
+}
+
+/* Tipo color */
+.card-text.type-normal {
+  background-color: #a8a77a;
+}
+.card-text.type-fire {
+  background-color: #ee8130;
+}
+.card-text.type-water {
+  background-color: #6390f0;
+}
+.card-text.type-electric {
+  background-color: #f7d02c;
+}
+.card-text.type-grass {
+  background-color: #7ac74c;
+}
+.card-text.type-ice {
+  background-color: #96d9d6;
+}
+.card-text.type-fighting {
+  background-color: #c22e28;
+}
+.card-text.type-poison {
+  background-color: #a33ea1;
+}
+.card-text.type-ground {
+  background-color: #e2bf65;
+}
+.card-text.type-flying {
+  background-color: #a98ff3;
+}
+.card-text.type-psychic {
+  background-color: #f95587;
+}
+.card-text.type-bug {
+  background-color: #a6b91a;
+}
+.card-text.type-rock {
+  background-color: #b6a136;
+}
+.card-text.type-ghost {
+  background-color: #735797;
+}
+.card-text.type-dragon {
+  background-color: #6f35fc;
+}
+.card-text.type-dark {
+  background-color: #705746;
+}
+.card-text.type-steel {
+  background-color: #b7b7ce;
+}
+.card-text.type-fairy {
+  background-color: #d685ad;
+}
+
+.pokemon-card .card {
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pokemon-card .card-body {
+  padding: 1.25rem;
+}
+
+
+
+/* Nombre personaje */
+.card-title.text-center {
+  font-family: 'Tektur';
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+/* Imagen del Pokémon */
+.pokemon-image {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f6f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 250px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.pokemon-image:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.pokemon-image img {
+  width: 70%;
+  height: min-content;
+}
+
+/*modal*/
+.modal-content {
+  border: none;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.peso{
+  font-family: 'Patrick Hand', cursive;
+}
+
+ul{
+  font-family: 'Architects Daughter', cursive;
+
+}
+
+.modal-header {
+  background-color: #333;
+  color: #fff;
+  border-bottom: none;
+  padding: 1rem 2rem;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Bungee Spice', cursive;
+  width: 100%; 
+}
+
+.modal-body {
+  padding: 2rem;
+  font-family: "Playfair Display", serif; /* Fuente para el contenido del modal */
+  font-size: 24px;
+  color: #333; /* Color de texto oscuro */
+}
+
+.modal-body img {
+  width: 40%;
+  max-height: 100px; 
+  object-fit: cover; 
+  object-position: center;
+  border-radius: 10px; 
+}
+
+.modal-footer {
+  background-color: #333; /* Color de fondo para el pie de página */
+  color: #fff;
+  border-top: none;
+  padding: 1rem 2rem; /* Espaciado interno en el pie de página */
+  text-align: center; /* Centrar el contenido en el pie de página */
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.modal-body button {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modal-body button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
